@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.teste.gateway",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "gateway",
+    "baseName": "testeGateway",
+    "packageName": "br.com.teste.gateway",
+    "packageFolder": "br/com/teste/gateway",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OGQ4OTJkM2Y3NGExOTY5ZjZmNzk2MzQzYmQ4YjkyYzMwYTYyMmQ0MTAwM2JlNjg0NzM3ZjRkYjU5MzIwZTdhZDczMjIwMTYxMTM3ZWE3OWM2ODZhMGJjNjVlYjg0ZmYxYTkxMjQzYmY2YTIxYmY5NjYzMjhlZmNiMDEzZjM0MWE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1579787459749,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": ["pt-br"],
+    "blueprints": []
+  }
+}
