@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { FuncionarioModule } from 'app/funcionario/funcionario.module';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     TesteGatewaySharedModule,
     TesteGatewayCoreModule,
     TesteGatewayHomeModule,
+    FuncionarioModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     TesteGatewayEntityModule,
     TesteGatewayAppRoutingModule

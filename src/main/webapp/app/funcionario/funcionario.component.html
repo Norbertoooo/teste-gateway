@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <h3>Gerenciador de funcionarios</h3>
+        </div>
+
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">nome completo</th>
+                <th scope="col">estado civil</th>
+                <th scope="col">email</th>
+                <th scope="col">phone number</th>
+                <th scope="col">aniversario</th>
+                <th scope="col">salario</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let funcionario of listaDeFuncionarios">
+                <th scope="row">{{funcionario.id}}</th>
+                <td>{{funcionario.nomeCompleto}}</td>
+                <td>{{funcionario.estadoCivil}}</td>
+                <td>{{funcionario.email}}</td>
+                <td>{{funcionario.phoneNumber}}
+                <td>{{funcionario.aniversario}}</td>
+                <td>{{funcionario.salario}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
