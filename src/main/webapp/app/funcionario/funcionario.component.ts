@@ -4,6 +4,8 @@ import { Funcionario } from 'app/funcionario/funcionario';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditarFuncionarioComponent } from 'app/funcionario/editar-funcionario/editar-funcionario.component';
 import { ExcluirFuncionarioComponent } from 'app/funcionario/excluir-funcionario/excluir-funcionario.component';
+import { AdicionarFuncionarioComponent } from 'app/funcionario/adicionar-funcionario/adicionar-funcionario.component';
+
 @Component({
   selector: 'jhi-funcionario',
   templateUrl: './funcionario.component.html',
@@ -20,12 +22,21 @@ export class FuncionarioComponent implements OnInit {
     this.listarFuncionarios();
   }
 
-  openEditFuncionario(): any {
-    this.modalService.open(EditarFuncionarioComponent);
+  openAdicionarFuncionario(): any {
+    const modalRef = this.modalService.open(AdicionarFuncionarioComponent).componentInstance;
+    modalRef.eventEmitter.subscribe(() => this.listarFuncionarios());
   }
 
-  openExcluirFuncionario(): any {
-    this.modalService.open(ExcluirFuncionarioComponent);
+  openEditFuncionario(funcionario: Funcionario): any {
+    const modalRef = this.modalService.open(EditarFuncionarioComponent).componentInstance;
+    modalRef.funcionario = funcionario;
+    modalRef.eventEmitter.subscribe(() => this.listarFuncionarios());
+  }
+
+  openExcluirFuncionario(funcionario: Funcionario): any {
+    const modalRef = this.modalService.open(ExcluirFuncionarioComponent).componentInstance;
+    modalRef.funcionario = funcionario;
+    modalRef.eventEmitter.subscribe(() => this.listarFuncionarios());
   }
 
   listarFuncionarios(): any {

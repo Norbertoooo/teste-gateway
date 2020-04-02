@@ -2,8 +2,8 @@
     <div class="row">
         <div>
             <h3>Gerenciador de funcionarios</h3>
+            <button id="adicionar-funcionario" class="btn btn-primary" (click)="openAdicionarFuncionario()"> Adicionar Funcionario </button>
         </div>
-
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -27,8 +27,8 @@
                 <td>{{funcionario.aniversario}}</td>
                 <td>{{funcionario.salario}}</td>
                 <td>
-                    <button class="btn btn-primary" (click)="openEditFuncionario()">Editar</button>
-                    <button class="btn btn-danger" (click)="openExcluirFuncionario()">Excluir</button>
+                    <button id="editar-funcionario" class="btn btn-primary" (click)="openEditFuncionario(funcionario)"> Editar </button>
+                    <button id="excluir-funcionario" class="btn btn-danger" (click)="openExcluirFuncionario(funcionario)"> Excluir </button>
                 </td>
             </tr>
             </tbody>

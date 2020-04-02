@@ -12,11 +12,11 @@ export class FuncionarioService {
   }
 
   editarFuncionario(request: any): any {
-    return this.httpClient.post('http://localhost:8081/api/funcionarios', request);
+    return this.httpClient.put('http://localhost:8081/api/funcionarios', request);
   }
 
   excluirFuncionario(request: any): any {
-    return this.httpClient.delete('http://localhost:8081/api/funcionarios', request);
+    return this.httpClient.delete('http://localhost:8081/api/funcionarios/' + request);
   }
 
   adicionarFuncionario(request: any): any {

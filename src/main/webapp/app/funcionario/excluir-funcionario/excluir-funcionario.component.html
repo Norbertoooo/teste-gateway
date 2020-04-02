@@ -1,4 +1,27 @@
-<div>
-    <h1> I AM HERE !</h1>
-    <h2> EXCLUIR FUNCIONARIO </h2>
+<div class="modal-open">
+    <a class="modal-header"> Excluir Funcionario </a>
+    <form class="modal-body">
+        <div class="form-group">
+            <label> Nome: {{funcionario.nomeCompleto}}</label>
+        </div>
+        <div class="form-group">
+            <label>estadoCivil: {{funcionario.estadoCivil}}</label>
+        </div>
+        <div class="form-group">
+            <label>email:{{funcionario.email}}</label>
+        </div>
+        <div class="form-group">
+            <label>phoneNumber:{{funcionario.phoneNumber}}</label>
+        </div>
+        <div class="form-group">
+            <label>aniversario:{{funcionario.aniversario}}</label>
+        </div>
+        <div class="form-group">
+            <label>salario: {{funcionario.salario}}</label>
+        </div>
+        <div class="btn-group-toggle">
+            <button id="excluir-funcionario" class="btn btn-success" type="submit" (click)="excluiFuncionario()"> Excluir Funcionario </button>
+            <button id="cancelar" class="btn btn-danger" type="button" (click)="close()"> Cancelar </button>
+        </div>
+    </form>
 </div>
